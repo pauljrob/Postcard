@@ -14,6 +14,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var enterMessageTextField: UITextField!
     @IBOutlet weak var mailButton: UIButton!
 
+    @IBOutlet weak var nameLabel: UILabel!
 
     
     override func viewDidLoad() {
@@ -35,6 +36,10 @@ class ViewController: UIViewController {
         messageLabel.textColor = UIColor.redColor()
         mailButton.setTitle("Mail Sent", forState: UIControlState.Normal)
         //test adding another commit
+        nameLabel.textColor = UIColor.blueColor()
+        nameLabel.hidden = false
+        nameLabel.text = enterNameTextField.text
+        enterNameTextField.text = ""
     }
 
 }
